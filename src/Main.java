@@ -24,7 +24,12 @@ public class Main {
         }
         //task3
         int[] ints3 = {20, 30, 55, 14, 66};
-        double middle = (double) expense / ints3.length;
+        int expense1 = 0;
+        for (int i = 0; i < ints3.length; i++) {
+            expense1 += ints3[i];
+        }
+        double middle = (double) expense1 / ints3.length;
+
         System.out.printf("Средняя сумма трат за месяц составила %.2f рублей.%n", middle);
         //task4
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
